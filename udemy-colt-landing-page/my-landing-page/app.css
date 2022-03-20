@@ -1,3 +1,4 @@
+/* css reset tool */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,4 +41,91 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+html{
+   text-transform: uppercase;
+   font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color:#2c7da0 ;
+    
+}
+.panel{
+    background-color:#f5f3f4 ;
+    box-sizing: border-box;
+    width: auto;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:#ffdd00 0.1rem solid;
+    border-radius: 1.5rem;
+    padding: 15px 35px;
+}
+.pricing-img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.pricing-plan{
+    text-align: center;
+}
+.pricing-button {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348efe;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out;
+  }
+  .pricing-button:hover, .pricing-button:focus {
+    background-color: #e1f1ff;
+  }
+  
+  .features {
+    margin: 50px 0 25px;
+    color: #016ff9;
+  }
+  .feature-items {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #2a6f97;
+  }
+  .price {
+    color: #016ff9; 
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+
+
+
+
+
+
+@media screen and (min-width: 900px) {
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .panel{
+        flex-direction: row;
+    }
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+      }
+      .pricing-plan:last-child {
+        border-right: none;
+      }
 }
